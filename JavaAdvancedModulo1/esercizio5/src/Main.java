@@ -3,10 +3,10 @@
 //Usare la funzione appena scritta in due blocchi di codice dove si cattura l'eventuale eccezione.
 public class Main {
     public static void main(String[] args) {
-        Double numeratore = 7.0;
-        Double denomiratore  = null;
+        double numeratore = 7.0;
+        Double denomiratore  = null; // ho usato "Double" per usare null
         try {
-            System.out.println(numeratore + "diviso" + denomiratore + "uguale" + div(numeratore, denomiratore));
+            System.out.println(numeratore + " diviso " + denomiratore + " uguale " + div(numeratore, denomiratore));
         }catch (ArithmeticException | NullPointerException e){
             System.out.println("error = " + e );
         }finally {
@@ -15,7 +15,7 @@ public class Main {
     }
     public static double div(Double num, Double denum) {
         if (denum == 0) {
-            throw new ArithmeticException("You can't divide by 0. The result doesn't exist.");
+            throw new ArithmeticException("You can't divide by 0");
         }
         if (num == null || denum == null) {
             throw new NullPointerException("Numerator and denominator can't be null.");
