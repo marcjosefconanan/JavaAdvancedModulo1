@@ -4,17 +4,22 @@ import java.util.HashSet;
 //Leggere l'hashSet e stampre grandezza ed elementi
 public class Main {
     public static void main(String[] args) {
+        //Scrivere una funzione che restituisca un hashset riempito
         HashSet<String> filledHashSet = getFilledHashSet();
-        System.out.println("hashet riempito" );//or + list + filledHashSet.size
+
+        //Leggere l'hashSet e stampre grandezza ed elementi
+        System.out.println("hashet riempito" + filledHashSet + filledHashSet.size()); //o + filledHashSet + filledHashSet.size più semplice
         System.out.println("Dimensione dell'HashSet: " + filledHashSet.size());
 
-        for (String element : filledHashSet) {   //questo vuol dire =
-            System.out.println(element);        // for (int i = 0; i < array.length; i++) {
-            //String element = array[i];
-            // System.out.println(element);
-        }
-    }
 
+        //Leggere l'hashSet e stampre grandezza ed elementi
+        //for (String element : filledHashSet) {   //questo vuol dire =
+        //    System.out.println(element);         // for (int i = 0; i < array.length; i++) {
+                                                 //String element = array[i];
+                                                 // System.out.println(element);
+        //}
+    }
+    //Scrivere una funzione che restituisca un hashset riempito
     private static HashSet<String> getFilledHashSet() {
         HashSet<String> hashSet = new HashSet<>();
         hashSet.add("element0");
